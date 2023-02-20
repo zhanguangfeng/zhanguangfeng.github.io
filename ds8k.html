@@ -2790,13 +2790,13 @@ function myFunction(v){
 
   if( x.length > 0 ){
     r=document.getElementById("M/T");
-    r.value=x[0]['M/T'].toUpperCase();
+    r.innerHTML=x[0]['M/T'].toUpperCase();
     r=document.getElementById("S/N");
-    r.value=x[0]['S/N'].toUpperCase();
+    r.innerHTML=x[0]['S/N'].toUpperCase();
     r=document.getElementById("ENCLLOC");
-    r.value=x[0]['ENCLLOC'].toUpperCase()+a[2];
+    r.innerHTML=x[0]['ENCLLOC'].toUpperCase()+a[2];
     r=document.getElementById("ENCLNUM");
-    r.value=x[0]['ENCLNUM'].toUpperCase();
+    r.innerHTML=x[0]['ENCLNUM'].toUpperCase();
    }
 }
 
@@ -2804,14 +2804,14 @@ function myFunction(v){
 <html>
 <body>
   <div class="container">
-    <textarea rows=4 cols=40 onkeyup="myFunction(this.value)" onfocus="this.value=''">
+    <textarea rows=4 cols=40 oninput="myFunction(this.value)" onfocus="this.value=''">
     </textarea>
   </div>
   <table>
-    <tr><td cols=10>M/T:</td><td><input id="M/T" readonly="true"></td></tr>
-    <tr><td cols=10>S/N:</td><td><input id="S/N" readonly="true"></td></tr>
-    <tr><td cols=10>Location:</td><td><input id="ENCLLOC" readonly="true"></td></tr>
-    <tr><td cols=10>Enclosure:</td><td><input id="ENCLNUM" readonly="true"></td></tr>
+    <tr><td cols=10>M/T:</td><td id="M/T"></td></tr>
+    <tr><td cols=10>S/N:</td><td id="S/N"></td></tr>
+    <tr><td cols=10>Location:</td><td id="ENCLLOC"></td></tr>
+    <tr><td cols=10>Enclosure:</td><td id="ENCLNUM"></td></tr>
   </table>
 </body>
 </html>
