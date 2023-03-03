@@ -1,4 +1,4 @@
-var DDM = {
+var ddm = {
     "U2107.D02.BG08DHK-P1-D1": 300.0,
     "U2107.D02.BG08DHK-P1-D10": 300.0,
     "U2107.D02.BG08DHK-P1-D11": 300.0,

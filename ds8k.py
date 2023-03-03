@@ -57,7 +57,7 @@ for name, data in h.items():
     print(name, mt,sn,enclnum,enclloc,sep="\t")
     i += 1
 
-j = 'var DATA = '
+j = 'var ds8k = '
 s = json.dumps(a,sort_keys=True,indent=4)
 f = open('ds8k.js', 'w')
 f.write(j + s)

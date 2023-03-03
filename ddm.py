@@ -13,7 +13,7 @@ for r in sh.rows:
   d[l] = s
   print(l,s)
 
-j = 'var DDM = '
+j = 'var ddm = '
 s = json.dumps(d,sort_keys=True,indent=4)
 f = open('ddm.js', 'w')
 f.write(j + s)
