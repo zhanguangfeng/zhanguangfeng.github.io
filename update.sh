@@ -1,6 +1,6 @@
 #! /bin/bash
 
 # name:  zhanguangfeng@sohu.com
-# token: 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
+# token: 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
 
-git push abc main
+git push -v abc main
