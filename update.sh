@@ -1,6 +1,6 @@
 #! /bin/bash
 
-# name:  zhanguangfeng@sohu.com
-# token: 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
+echo name:  zhanguangfeng@sohu.com
+echo token: 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
 
 git push -v abc main
