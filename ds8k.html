@@ -22,7 +22,6 @@
             x = ds8k.filter(e => e['ENCLLOC'] == a[1]);
         } else {
             a = v.match(/(IBM.2107-D02-\w{5}\/R\d)(-P1-D\d+)/);
-            console.log(a[1]);
             x = ds8k.filter(e => e['ENCLNUM'].includes(a[1]));
         }
         if (x.length > 0) {
