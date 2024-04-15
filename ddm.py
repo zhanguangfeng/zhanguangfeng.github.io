@@ -3,7 +3,7 @@
 import excel
 import json
 
-wb = excel.open('ddm.xls')
+wb = excel.open('ddm.xlsx')
 sh = wb[0]
 js = None
 with open('ddm.js') as fp:
